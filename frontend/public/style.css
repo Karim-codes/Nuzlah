@@ -9,7 +9,7 @@ body, html {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #fff;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #26d523, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
 }
@@ -28,7 +28,12 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+img{
+    padding-top: 50px;
+}
+
 .countdown {
+    
     display: flex;
     margin: 25px 0;
 }
@@ -45,6 +50,13 @@ h1 {
 }
 
 p {
-    margin-top: 20px;
-    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif; /* Sets a nice, readable font */
+        text-align: center; /* Centers the text */
+        max-width: 600px; /* Limits the maximum width */
+        margin: 40px auto; /* Centers the block horizontally and adds some vertical spacing */
+        padding: 20px; /* Adds some padding inside the paragraph for better readability */
+        /* border-radius: 1px; /* Softens the edges */
+        /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); Adds a subtle shadow for depth */
+        font-size: 18px; /* Increases the font size for readability */
+        color: #ffffff; /* Sets a darker color for the text */
 }
