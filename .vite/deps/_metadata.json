@@ -1,0 +1,77 @@
+{
+  "hash": "f3c48597",
+  "browserHash": "c12f4ece",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "119baca5",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c387f00e",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "934c146e",
+      "needsInterop": false
+    },
+    "@mui/icons-material/KeyboardArrowDown": {
+      "src": "../../node_modules/@mui/icons-material/KeyboardArrowDown.js",
+      "file": "@mui_icons-material_KeyboardArrowDown.js",
+      "fileHash": "6d56d193",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Search": {
+      "src": "../../node_modules/@mui/icons-material/Search.js",
+      "file": "@mui_icons-material_Search.js",
+      "fileHash": "38a2ca5d",
+      "needsInterop": true
+    },
+    "@mui/icons-material/PersonOutlineOutlined": {
+      "src": "../../node_modules/@mui/icons-material/PersonOutlineOutlined.js",
+      "file": "@mui_icons-material_PersonOutlineOutlined.js",
+      "fileHash": "40fce016",
+      "needsInterop": true
+    },
+    "@mui/icons-material/FavoriteBorderOutlined": {
+      "src": "../../node_modules/@mui/icons-material/FavoriteBorderOutlined.js",
+      "file": "@mui_icons-material_FavoriteBorderOutlined.js",
+      "fileHash": "34391b22",
+      "needsInterop": true
+    },
+    "@mui/icons-material/ShoppingCartOutlined": {
+      "src": "../../node_modules/@mui/icons-material/ShoppingCartOutlined.js",
+      "file": "@mui_icons-material_ShoppingCartOutlined.js",
+      "fileHash": "a4f6c976",
+      "needsInterop": true
+    },
+    "@mui/icons-material/EastOutlined": {
+      "src": "../../node_modules/@mui/icons-material/EastOutlined.js",
+      "file": "@mui_icons-material_EastOutlined.js",
+      "fileHash": "b21c57a2",
+      "needsInterop": true
+    },
+    "@mui/icons-material/WestOutlined": {
+      "src": "../../node_modules/@mui/icons-material/WestOutlined.js",
+      "file": "@mui_icons-material_WestOutlined.js",
+      "fileHash": "030df4c1",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-T5BNSFD4": {
+      "file": "chunk-T5BNSFD4.js"
+    },
+    "chunk-TRGCZCZE": {
+      "file": "chunk-TRGCZCZE.js"
+    },
+    "chunk-KRQVU3GS": {
+      "file": "chunk-KRQVU3GS.js"
+    }
+  }
+}
