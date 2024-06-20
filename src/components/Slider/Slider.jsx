@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
-import "./Slider.scss"
-
+import "./Slider.scss";
 
 const Slider = () => {
-
-    const [currentSlide, setCurrentSlide] = useState(0)
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [autoSlide, setAutoSlide] = useState(true);
 
     const data = [
         "https://images.pexels.com/photos/1040906/pexels-photo-1040906.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -14,32 +13,53 @@ const Slider = () => {
         "https://images.pexels.com/photos/11294087/pexels-photo-11294087.jpeg?auto=compress&cs=tinysrgb&w=1600"
     ];
 
-    const prevSlide = ()=>{
-        setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev - 1 );
-    }
-    const nextSlide = ()=>{
-        setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1 );
+    const prevSlide = () => {
+        setCurrentSlide(currentSlide === 0 ? data.length - 1 : currentSlide - 1);
+    };
 
-    }
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide === data.length - 1 ? 0 : currentSlide + 1);
+    };
 
+    useEffect(() => {
+        if (autoSlide) {
+            const slideInterval = setInterval(() => {
+                nextSlide();
+            }, 3000);
+            return () => clearInterval(slideInterval);
+        }
+    }, [currentSlide, autoSlide]);
 
-  return (
-    <div className="slider">
-      <div className="container" style={{transform: `translateX(-${currentSlide * 100}vw)`,}}>
-            <img src={data[0]} alt="" />
-            <img src={data[1]} alt="" />
-            <img src={data[2]} alt="" />
-        </div>
-        <div className="icons">
-            <div className="icon" onClick={prevSlide}>
-                <WestOutlinedIcon/>
+    const handleMouseEnter = () => {
+        setAutoSlide(false);
+    };
+
+    const handleMouseLeave = () => {
+        setAutoSlide(true);
+    };
+
+    return (
+        <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className="container" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
+                {data.map((img, index) => (
+                    <img key={index} src={img} alt={`Slide ${index + 1}`} />
+                ))}
             </div>
-            <div className="icon" onClick={nextSlide}>
-                <EastOutlinedIcon />
+            <div className="icons">
+                <div className="icon" onClick={prevSlide}>
+                    <WestOutlinedIcon />
+                </div>
+                <div className="icon" onClick={nextSlide}>
+                    <EastOutlinedIcon />
+                </div>
+            </div>
+            <div className="indicators">
+                {data.map((_, index) => (
+                    <div key={index} className={`indicator ${index === currentSlide ? 'active' : ''}`} />
+                ))}
             </div>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Slider
+export default Slider;

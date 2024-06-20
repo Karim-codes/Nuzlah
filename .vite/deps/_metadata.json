@@ -1,69 +1,108 @@
 {
   "hash": "f3c48597",
-  "browserHash": "c12f4ece",
+  "browserHash": "b97b9d7f",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "119baca5",
+      "fileHash": "8cfbd8a2",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "c387f00e",
+      "fileHash": "1daa1bf7",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "934c146e",
+      "fileHash": "a29347b9",
       "needsInterop": false
     },
     "@mui/icons-material/KeyboardArrowDown": {
       "src": "../../node_modules/@mui/icons-material/KeyboardArrowDown.js",
       "file": "@mui_icons-material_KeyboardArrowDown.js",
-      "fileHash": "6d56d193",
+      "fileHash": "4736cc96",
       "needsInterop": true
     },
     "@mui/icons-material/Search": {
       "src": "../../node_modules/@mui/icons-material/Search.js",
       "file": "@mui_icons-material_Search.js",
-      "fileHash": "38a2ca5d",
+      "fileHash": "7d7f7f18",
       "needsInterop": true
     },
     "@mui/icons-material/PersonOutlineOutlined": {
       "src": "../../node_modules/@mui/icons-material/PersonOutlineOutlined.js",
       "file": "@mui_icons-material_PersonOutlineOutlined.js",
-      "fileHash": "40fce016",
+      "fileHash": "703cd3d6",
       "needsInterop": true
     },
     "@mui/icons-material/FavoriteBorderOutlined": {
       "src": "../../node_modules/@mui/icons-material/FavoriteBorderOutlined.js",
       "file": "@mui_icons-material_FavoriteBorderOutlined.js",
-      "fileHash": "34391b22",
+      "fileHash": "b117eab6",
       "needsInterop": true
     },
     "@mui/icons-material/ShoppingCartOutlined": {
       "src": "../../node_modules/@mui/icons-material/ShoppingCartOutlined.js",
       "file": "@mui_icons-material_ShoppingCartOutlined.js",
-      "fileHash": "a4f6c976",
+      "fileHash": "1968fb8a",
       "needsInterop": true
     },
     "@mui/icons-material/EastOutlined": {
       "src": "../../node_modules/@mui/icons-material/EastOutlined.js",
       "file": "@mui_icons-material_EastOutlined.js",
-      "fileHash": "b21c57a2",
+      "fileHash": "152d7e45",
       "needsInterop": true
     },
     "@mui/icons-material/WestOutlined": {
       "src": "../../node_modules/@mui/icons-material/WestOutlined.js",
       "file": "@mui_icons-material_WestOutlined.js",
-      "fileHash": "030df4c1",
+      "fileHash": "85d5ba52",
       "needsInterop": true
+    },
+    "@mui/icons-material/Facebook": {
+      "src": "../../node_modules/@mui/icons-material/Facebook.js",
+      "file": "@mui_icons-material_Facebook.js",
+      "fileHash": "5f018b06",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Instagram": {
+      "src": "../../node_modules/@mui/icons-material/Instagram.js",
+      "file": "@mui_icons-material_Instagram.js",
+      "fileHash": "7b357694",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Twitter": {
+      "src": "../../node_modules/@mui/icons-material/Twitter.js",
+      "file": "@mui_icons-material_Twitter.js",
+      "fileHash": "104d0682",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Google": {
+      "src": "../../node_modules/@mui/icons-material/Google.js",
+      "file": "@mui_icons-material_Google.js",
+      "fileHash": "80c22c88",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Pinterest": {
+      "src": "../../node_modules/@mui/icons-material/Pinterest.js",
+      "file": "@mui_icons-material_Pinterest.js",
+      "fileHash": "e14b5433",
+      "needsInterop": true
+    },
+    "react-router": {
+      "src": "../../node_modules/react-router/dist/index.js",
+      "file": "react-router.js",
+      "fileHash": "d59aa698",
+      "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-5OUPBDAS": {
+      "file": "chunk-5OUPBDAS.js"
+    },
     "chunk-T5BNSFD4": {
       "file": "chunk-T5BNSFD4.js"
     },
