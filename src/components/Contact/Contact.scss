@@ -1,34 +1,69 @@
-.contact{
+.contact {
     background: #2fa408;
     color: white;
     padding: 15px;
     display: flex;
     justify-content: center;
-
-    .wrapper{
-        width: 50%;
-        display: flex;
+  
+    .wrapper {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+  
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      flex: 1;
+      min-width: 150px; /* Ensure input doesn't get too small */
+    }
+  
+    button {
+      padding: 10px;
+      color: white;
+      background: #333;
+      border: none;
+      border-radius: 0 5px 5px 0;
+    }
+  
+    .icons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+    }
+  
+    @media (max-width: 768px) {
+      .wrapper {
+        width: 100%;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+  
+        input,
+        button {
+          width: 100%;
+          margin: 5px 0; /* Add some margin for better spacing */
+        }
+  
+        .icons {
+          justify-content: center;
+        }
+      }
     }
-
-    input{
-        padding: 10px;
-        border: none;
-        border-radius:5px 0 0 5px ;
+  
+    @media (max-width: 480px) {
+      padding: 10px;
+  
+      input,
+      button {
+        padding: 8px;
+      }
+  
+      .icons {
+        gap: 5px;
+      }
     }
-
-    button{
-        padding: 10px;
-        color: white;
-        background: #333;
-        border: none;
-        border-radius: 0 5px 5px 0;
-    }
-
-    .icons{
-        display: flex;
-        gap: 10px;
-    }
-    
-}
+  }
+  

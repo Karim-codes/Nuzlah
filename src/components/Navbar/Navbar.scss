@@ -1,57 +1,113 @@
 .navbar {
-    height: 80px;
-  
-    .wrapper {
-      padding: 10px 30px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  position: relative;
+  z-index: 10; /* Ensure navbar is on top */
+
+  .wrapper {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left, .right {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-  
+    }
+
+    .center {
+      font-size: 32px;
+      letter-spacing: 4px;
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    .menuIcon {
+      display: none;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
       .item {
         display: flex;
         align-items: center;
         font-size: 18px;
+
+        .link {
+          text-decoration: none;
+          color: #000;
+        }
       }
-  
-      .left {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-      }
-      .center {
-        font-size: 32px;
-        letter-spacing: 4px;
-      }
-      .right {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-  
-        .icons {
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      color: #777;
+      cursor: pointer;
+
+      .cartIcon {
+        position: relative;
+
+        span {
+          font-size: 12px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #2879fe;
+          color: white;
+          position: absolute;
+          right: -10px;
+          top: -10px;
           display: flex;
-          gap: 15px;
-          color: #777;
-          cursor: pointer;
-  
-          .cartIcon {
-            position: relative;
-  
-            span {
-              font-size: 12px;
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              background-color: #2879fe;
-              color: white;
-              position: absolute;
-              right: -10px;
-              top: -10px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-          }
+          align-items: center;
+          justify-content: center;
         }
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .menuIcon {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        position: absolute; /* Position the menu */
+        top: 100%; /* Position the menu below the navbar */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 10px 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 9; /* Ensure the menu is below the navbar */
+
+        &.open {
+          display: flex;
+        }
+      }
+
+      .center {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
