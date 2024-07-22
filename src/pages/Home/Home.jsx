@@ -10,7 +10,7 @@ function Home() {
       <Slider/>
       <FeaturedProducts type="featured"/>
       <Categories />
-      <FeaturedProducts type="trend"/>
+      <FeaturedProducts type="trending"/>
       <Contact />
     </div>
   )
