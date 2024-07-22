@@ -1,0 +1,8 @@
+9518cf348689ce2ff765cf7cb8b315873257bc41 727294b3a7e934391795f14c8e48033819689faa karim-codes <abdikariim.a.y@gmail.com> 1717506246 +0100	commit: Ensure node_modules and client directories are ignored
+727294b3a7e934391795f14c8e48033819689faa e0c9d8fabbd4cc709e58ffbca013b05436473717 karim-codes <abdikariim.a.y@gmail.com> 1717507689 +0100	commit: Update .gitignore file
+e0c9d8fabbd4cc709e58ffbca013b05436473717 e0c9d8fabbd4cc709e58ffbca013b05436473717 karim-codes <abdikariim.a.y@gmail.com> 1717595024 +0100	reset: moving to HEAD
+e0c9d8fabbd4cc709e58ffbca013b05436473717 e0c9d8fabbd4cc709e58ffbca013b05436473717 karim-codes <abdikariim.a.y@gmail.com> 1717595876 +0100	reset: moving to HEAD
+e0c9d8fabbd4cc709e58ffbca013b05436473717 e0c9d8fabbd4cc709e58ffbca013b05436473717 karim-codes <abdikariim.a.y@gmail.com> 1717595936 +0100	reset: moving to HEAD
+e0c9d8fabbd4cc709e58ffbca013b05436473717 80eeb3000af2ee772b6964b0e2ef153c440d6dfc karim-codes <abdikariim.a.y@gmail.com> 1717596217 +0100	commit: Remove unnecessary files
+80eeb3000af2ee772b6964b0e2ef153c440d6dfc 1fb108d426121c7f420d9c8bae303d61fb322b01 karim-codes <abdikariim.a.y@gmail.com> 1717597393 +0100	commit: Update balanced-match module
+1fb108d426121c7f420d9c8bae303d61fb322b01 f66c9b460462ba0d9f703f598ee644937802cbb7 karim-codes <abdikariim.a.y@gmail.com> 1717597756 +0100	commit: Fix error by installing balanced-match package
