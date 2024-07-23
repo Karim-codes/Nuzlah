@@ -3,6 +3,8 @@
     height: 80vh;
     gap: 10px;
     margin: 10px;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    height: auto; /* Adjust height to fit content */
 
     .col{
         flex:1;
@@ -46,5 +48,15 @@
             object-fit: cover;
         }
     }
+
+    @media (max-width: 768px) {
+        .col {
+          flex: 1 1 100%; /* Allow columns to stack vertically */
+        }
+        
+        .col-l {
+          flex: 1 1 100%; /* Make the larger column stack as well */
+        }
+      }
 }
 
