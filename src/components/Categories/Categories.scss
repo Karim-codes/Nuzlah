@@ -1,30 +1,30 @@
-.categories {
+.categories{
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    height: auto;
+    height: 80vh;
     gap: 10px;
     margin: 10px;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    height: auto; /* Adjust height to fit content */
 
-    .col {
-        flex: 1;
+    .col{
+        flex:1;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    .col-l {
-        flex: 2;
+    .col-l{
+        flex:2;
     }
 
-    .row {
+    .row{
         flex: 1;
         display: flex;
-        flex-direction: column; /* Change direction to column for better stacking on mobile */
         gap: 10px;
         position: relative;
         overflow: hidden;
 
-        button {
+        button{
             position: absolute;
             min-width: 100px;
             width: fit-content;
@@ -42,7 +42,7 @@
             font-weight: 500;
         }
 
-        img {
+        img{
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -50,34 +50,13 @@
     }
 
     @media (max-width: 768px) {
-        flex-direction: column;
-        height: auto;
-
-        .col, .col-l {
-            flex: none;
+        .col {
+          flex: 1 1 100%; /* Allow columns to stack vertically */
         }
-
-        .row {
-            height: auto;
-            button {
-                width: 80%;
-                font-size: 14px;
-            }
-
-            img {
-                height: auto;
-            }
+        
+        .col-l {
+          flex: 1 1 100%; /* Make the larger column stack as well */
         }
-    }
-
-    @media (max-width: 480px) {
-        margin: 5px;
-
-        .row {
-            button {
-                width: 70%;
-                font-size: 12px;
-            }
-        }
-    }
+      }
 }
+
