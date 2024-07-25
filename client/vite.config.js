@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['/src/main.jsx'] // Prevent Rollup from including this module
+      external: ['./src/main.jsx'] // Prevent Rollup from including this module
     },
     // Optional: adjust chunk size warning limit if needed
     chunkSizeWarningLimit: 1000,
