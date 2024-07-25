@@ -13,8 +13,8 @@ const useFetch = (url) =>{
             const apiUrl = import.meta.env.VITE_REACT_APP_API_URL;
             const apiToken = import.meta.env.VITE_REACT_APP_API_TOKEN;
     
-            //console.log('API URL:', apiUrl);
-            //console.log('API Token:', apiToken);
+            console.log('API URL:', apiUrl);
+            console.log('API Token:', apiToken);
     
             if (!apiUrl || !apiToken) {
               throw new Error('API URL or Token is missing');
