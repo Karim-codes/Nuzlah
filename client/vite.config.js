@@ -9,6 +9,7 @@ export default defineConfig({
           vendor: ['react', 'react-dom'], // Example of splitting vendor code
         },
       },
+      external: ['/src/main.jsx'] // Exclude problematic import
     },
   },
 });
