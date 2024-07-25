@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [react()],
   build: {
-    chunkSizeWarningLimit: 1000, // Increase chunk size limit
     rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'], // Example of splitting vendor code
-        },
+      input: {
+        main: '/src/main.jsx', // Path relative to the base
       },
-      external: ['/src/main.jsx'] // Exclude problematic import
+      external: [], // If you have external dependencies, list them here
     },
   },
 });
